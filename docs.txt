@@ -1,0 +1,23 @@
+Frontend Dev Notes - TechVault 🚀
+Welcome, fellow frontend dev!
+Hey there! You're part of something exciting! TechVault is all about creativity, precision, and making tech shopping smooth and enjoyable. Here are a few things to keep in mind while working on the frontend:
+
+🛠️ Code with Creativity
+Don’t be afraid to get wild with your designs, animations, and interactions! Make it fun but still usable.
+
+Maintain consistency with the provided styles but feel free to propose cool new elements.
+
+📌 Leave a Note for the Next Dev
+If you change something big, document it (either in comments or here).
+
+If something feels tricky, add a quick explanation so the next dev doesn’t have to struggle.
+
+📚 Things You Learned? Write Them Down!
+As you work, if you pick up a new trick, a cool CSS hack, or anything useful, drop it in this file. It might help someone else later!
+
+💡 Have Fun & Collaborate!
+This isn’t just code—it’s a shared project. Keep it clean, structured, and friendly for future devs.
+
+
+
+👇👇👇👇👇

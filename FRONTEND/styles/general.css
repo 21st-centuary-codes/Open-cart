@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-blue: #1E90FF; /* Branding & CTA buttons */
+  --dark-blue: #000080; /* Headers, buttons, strong accents */
+  --light-blue: #ADD8E6; /* Backgrounds, hover effects */
+  --steel-blue: #4682B4; /* Subtle, techy feel */
+  
+  --black: #000000; /* Strong contrast, headings, footer */
+  --dark-grey: #333333; /* Readability for text */
+  --light-grey: #E0E0E0; /* Dividers, borders, subtle backgrounds */
+  --white: #FFFFFF; /* Clean background and contrast */
+  
+  --crimson-red: #DC143C; /* Sale banners, urgent notifications */
+  --tomato-red: #FF6347; /* Lighter alternative for warnings */
+  
+  --emerald-green: #50C878; /* Success messages, positive indicators */
+  --teal-green: #008080; /* Subtle, professional green-blue tone */
+  
+  --gold-yellow: #FFD700; /* Premium feel, highlights, badges */
+  --mustard-yellow: #FFDB58; /* Soft, warm alternative for highlights */
+
+
+     /* ===========font families =========== */
+     --font-body: 'Inter', sans-serif; /* Clean, modern, and readable */
+     --font-heading: 'Montserrat', sans-serif; /* Bold, strong presence */
+     --font-special: 'Space Mono', monospace; /* For special highlights, code, or futuristic feel */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--dark-grey);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+}
+p {
+  margin-bottom: .6em;
+}
+
+/* ========= fluuid typography no need to handle text with meadia quaeries */
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem); /* Between 32px and 48px */
+}
+h2 {
+  font-size: clamp(1.8rem, 4.5vw, 2.5rem); /* Between 28px and 40px */
+}
+h3 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem); /* Between 25px and 35px */
+}
+h4 {
+  font-size: clamp(1.4rem, 3.5vw, 2rem); /* Between 22px and 32px */
+}
+h5 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem); /* Between 19px and 28px */
+}
+h6 {
+  font-size: clamp(1rem, 2.5vw, 1.6rem); /* Between 16px and 25px */
+}
+p {
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Between 16px and 19px */
+  line-height: 1.6;
+}
+
+button {
+  font-family: var(--font-special);
+  padding: 0.7em 1.2em;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: var(--steel-blue);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  transition: 0.3s;
+}
+a:hover {
+  color: var(--steel-blue);
+}
