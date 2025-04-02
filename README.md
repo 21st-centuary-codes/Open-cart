@@ -1,7 +1,7 @@
-# TechVault
+# Open-cart
  A secure place for all things tech.
 
-**TechVault** is an eCommerce website that sells tech-related items. It provides a seamless shopping experience for users looking for the latest gadgets and accessories.
+**Open-cart** is an eCommerce website that sells tech-related items. It provides a seamless shopping experience for users looking for the latest gadgets and accessories.
 
 ## 🚀 Features
 - Browse and purchase tech products
@@ -17,7 +17,7 @@
 ## 📦 Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Ugochukwu111/TechVault.git
+   git clone https://github.com/Ugochukwu111/Open-cart.git
 
 
 ## folders explained
