@@ -21,3 +21,4 @@ This isn’t just code—it’s a shared project. Keep it clean, structured, and
 
 
 👇👇👇👇👇
+learnt more on media queries --pascal
