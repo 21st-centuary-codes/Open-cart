@@ -1,0 +1,242 @@
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  padding: 1em 2em;
+  box-shadow: 5px 5px 10px var(--light-grey);
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+  margin-inline: .5em;
+  text-transform: capitalize;
+  /* center text */
+  display: flex;
+  align-items: center;
+}
+
+/* === DID THIS SO THAT MAIN WILL ALWAYS PUSH FOOTER
+       TO THE BOTTOM OF THE PAGE SO IT WILL STICK TO THE BOTTTOM 
+       AT LARGER SCREEN SIZES 
+       HINT: BODY WAS SET TO FLEX AND DIRECTION CCOLUMN TO ACHIEVE THIS  */
+main{
+  
+  flex: 1;
+  flex-direction: column;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+a{
+  display: block;
+  padding: .7em 1em;
+}
+
+input{
+  padding: .8em 1em;
+  font-size: 1rem;
+  text-transform: capitalize;
+  width: 100%;
+  border-radius: .2rem;
+  border: 1.5px solid var(--light-grey);
+  transition: all 250ms ease ;
+}
+input:focus{
+  outline: none;
+  border: 1.5px solid var(--dark-blue);
+}
+
+/* ==== UTILITY CLASSES */
+.bd-radius{
+  border-radius: inherit;
+}
+.BB{border-bottom: 1px solid var(--light-grey);} /* BB ==== border bottom */
+
+
+.d-block{display: block;}
+.d-flex{display: flex;}
+.space-btw{justify-content: space-between;}
+.space-around{justify-content: space-around;}
+.f-d-column{flex-direction: column; }
+.j-c-end{justify-content: end;}
+.j-c-start{justify-content: start;}
+.j-c-center{justify-content: center;}
+.align-center{align-items: center;}
+.align-start{align-items: start;}
+.align-end{align-items: end;}
+
+/* FONTN-UTILITIES */
+.FWB{font-weight: bold;}
+
+/* ======= OTHER UTILITIES ========= */
+/* for tags that have icons in then to center properly */
+.text-icon-container{
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+/* container above nav that contains links to become and open carrt agent */
+.agent-links-continer a{
+     color: var(--light-grey);
+}
+.agent-links-continer a:hover{
+  color: var(--light-blue);
+}
+.agent-links-continer .opay:hover{
+  color: var(--emerald-green);
+}
+
+.search-input-btn-container{
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin-inline: 1em;
+}
+.search-input-btn-container input{
+  width: 100%;
+  margin-inline: 1em;
+}
+
+.product-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  padding: 2em;
+  max-width: 1200px;
+  align-items: stretch;align-items: stretch;
+  margin-inline: auto;
+}
+
+.product-container >*{
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: .3em .5em;
+  border-radius: .5rem;
+}
+
+.product-img-contaner{
+  width: 100%;
+  background-color: var(--dark-blue);
+   height: 210px;
+}
+
+.product-price{
+  margin-left: .3em;
+}
+
+.sellers-img-container{
+  width: 30px;
+  background-color: var(--dark-blue);
+  height: 30px;
+  border-radius: 50%;
+  font-size: .4rem;
+  color: white;
+}
+
+.seller-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+.sellars-name{
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+
+
+/*=== FOOTER CSS STYLES === */
+.upper-footer-container{
+  padding: 2em 0;
+}
+
+.newsletter-container{
+  width: 100%;
+  max-width: 650px;
+}
+
+.newsletter-container button{
+  margin: 1em 0;
+}
+ 
+.terms-conditions-contaner input{
+  width: fit-content;
+  margin: .5em;
+ 
+}
+.terms-conditions-contaner{
+  line-height: 1.3;
+  margin-top: 1em;
+}
+
+.second-footer-container{
+  padding: 2em 0;
+}
+
+.second-footer-container >*{
+  width: 20%;
+  padding: .2em;
+}
+.second-footer-container ul{
+  list-style: none;
+}
+
+/* === FOOTER SOCIAL LINKS ICON */
+.socials-container{
+  list-style: none;
+}
+
+.socials-container li{
+  border-radius: 50%;
+  margin-inline: .5em;
+}
+.socials-container li a{
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 60px;
+  border: 1px solid var(--dark-grey);
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: center;
+}
+
+.socials-container li a:hover{
+transform: scale(1.1);
+border: 3px solid var(--light-blue);
+}
+
+.facebook-link-icon{
+  background-image: url(../media/social-media-png/facebook.svg);
+}
+.facebook-link-icon:hover{
+  background-color: var(--white);
+}
+
+.ig-link-icon{
+  background-image: url(../media/social-media-png/instagram.svg);
+}
+.ig-link-icon:hover{
+  background-color: var(--white);
+}
+.x-link-icon{
+  background-image: url(../media/social-media-png/twitter.svg);
+}
+.x-link-icon:hover{
+  background-color: var(--white);
+}

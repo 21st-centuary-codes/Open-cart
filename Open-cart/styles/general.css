@@ -14,7 +14,7 @@
   
   --black: #000000; /* Strong contrast, headings, footer */
   --dark-grey: #333333; /* Readability for text */
-  --light-grey: #E0E0E0; /* Dividers, borders, subtle backgrounds */
+  --light-grey: #a6a4a4; /* Dividers, borders, subtle backgrounds */
   --white: #FFFFFF; /* Clean background and contrast */
   
   --crimson-red: #DC143C; /* Sale banners, urgent notifications */
@@ -42,6 +42,7 @@ body {
   color: var(--dark-grey);
   background-color: var(--white);
   line-height: 1.6;
+  min-height: 100svh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,7 +75,7 @@ h5 {
   font-size: clamp(1.2rem, 3vw, 1.8rem); /* Between 19px and 28px */
 }
 h6 {
-  font-size: clamp(1rem, 2.5vw, 1.6rem); /* Between 16px and 25px */
+  font-size: clamp(.9rem, 2.5vw, 1.4rem); /* Between 16px and 25px */
 }
 p {
   font-size: clamp(1rem, 2vw, 1.2rem); /* Between 16px and 19px */
@@ -91,16 +92,97 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: 3px 3px 10px var(--light-grey);
 }
 button:hover {
   background-color: var(--steel-blue);
+  transition: all 0.3s ease;
+}
+
+button:active{
+  opacity: .7;
 }
 
 a {
   text-decoration: none;
   color: var(--primary-blue);
   transition: 0.3s;
+  font-weight: 700;
 }
 a:hover {
   color: var(--steel-blue);
+}
+
+/* ======== COLOR UTILITIESS ====== */
+/* Background Colors */
+.bg-primary-blue { background-color: var(--primary-blue); }
+.bg-dark-blue { background-color: var(--dark-blue); }
+.bg-light-blue { background-color: var(--light-blue); }
+.bg-steel-blue { background-color: var(--steel-blue); }
+
+.bg-black { background-color: var(--black); }
+.bg-dark-grey { background-color: var(--dark-grey); }
+.bg-light-grey { background-color: var(--light-grey); }
+.bg-white { background-color: var(--white); }
+
+.bg-crimson-red { background-color: var(--crimson-red); }
+.bg-tomato-red { background-color: var(--tomato-red); }
+
+.bg-emerald-green { background-color: var(--emerald-green); }
+.bg-teal-green { background-color: var(--teal-green); }
+
+.bg-gold-yellow { background-color: var(--gold-yellow); }
+.bg-mustard-yellow { background-color: var(--mustard-yellow); }
+
+/* Text Colors */
+.text-primary-blue { color: var(--primary-blue); }
+.text-dark-blue { color: var(--dark-blue); }
+.text-light-blue { color: var(--light-blue); }
+.text-steel-blue { color: var(--steel-blue); }
+
+.text-black { color: var(--black); }
+.text-dark-grey { color: var(--dark-grey); }
+.text-light-grey { color: var(--light-grey); }
+.text-white { color: var(--white); }
+
+.text-crimson-red { color: var(--crimson-red); }
+.text-tomato-red { color: var(--tomato-red); }
+
+.text-emerald-green { color: var(--emerald-green); }
+.text-teal-green { color: var(--teal-green); }
+
+.text-gold-yellow { color: var(--gold-yellow); }
+.text-mustard-yellow { color: var(--mustard-yellow); }
+
+
+/* =======global css layout utilities == */
+/* to center contents on wider screen(monitors) 
+its nicde to have only one global css for this for easy manioulation 
+across web pages
+*/
+.container{
+  max-width: 1200px;
+  margin-inline: auto;
+  border: 2px solid red;
+}
+
+/* keeps displaying through out site hade to put it here */
+
+.logo-container{
+  width: 10vw;  
+  height: 4vw;      /* or use % based on parent */
+  max-width: 250px; 
+  opacity: 0;  /* Logo is initially invisible */
+  animation: fadeIn 2s forwards;
+}
+
+
+/* Define the keyframes for fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

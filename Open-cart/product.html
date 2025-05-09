@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Open-cart/styles/general.css">
+  <link rel="stylesheet" href="/Open-cart/styles/product.css">
+  <title>Open-Cart | products</title>
+</head>
+<body>
+  
+  <header>
+    <div class="d-flex align-center space-btw agent-links-continer">
+     <a class="text-icon-container" href="">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+      <span>sell on Open Cart</span>
+    </a>
+     <span class="FWB text-primary-blue">Open-Cart</span>
+     <!-- a tag has been set to d block as a global setting 
+      had to over ride it for responsive css -->
+      <span class="d-flex align-center">
+        <a class="opay" href="">Opay</a>
+        <a class=" text-icon-container" href="">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z"/></svg>
+          <span>Delivery agent</span>
+        </a>
+      </span>
+    </div>
+    
+    <nav class="d-flex space-btw align-center">
+      <figure class="logo-container">
+        <img src="/Open-cart/media/logo.png" alt="Open-Cart-logo">
+      </figure>
+
+      <!-- div for input and serch bth -->
+       <!-- tho the myaccount and help are not direct links 
+        i used an a tag to retain styling with other links in the nav -->
+       <div class="search-input-btn-container">
+        <input type="text">
+        <button>Search</button>
+       </div>
+
+       <ul class="d-flex">
+        <li tabindex="0">
+          <a class="text-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+
+          <span class="text-primary-blue FWB">my account</span>
+          <!-- dropdown icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+        </a>
+        </li>
+
+        <li tabindex="0">
+          <a class="text-icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"/></svg>
+
+            <span class="text-primary-blue FWB">Help</span>
+               <!-- dropdown icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="text-icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+            <span> Cart</span> 
+          </a>
+        </li>
+       </ul>
+    </nav>
+
+  </header>
+
+  <main>
+     <div class="product-container">
+
+        <div class="product-card">
+           <!-- img div -->
+            <div  class="product-img-contaner bd-radius">
+              <img class="bd-radius" src="/Open-cart/media/productImages/headphone.jpg" alt="product-img">
+            </div>
+
+            <div>
+              <p class="product-name ">product name</p>
+              <p class="product-price FWB">$0.00</p>
+              <div class="seller-container">
+                <div class="sellers-img-container">
+                  <img  src="" alt="sellars img">
+                </div>
+                <p class="sellars-name">sellers name</p>
+              </div>
+            </div>
+              
+            <button>
+              Add To Cart
+            </button>
+        </div>
+
+     </div>
+  </main>
+
+<footer>
+  <div class="container">
+      <!-- upper footer container -->
+      <div class="d-flex space-around align-start upper-footer-container">
+        <figure class="logo-container">
+          <img src="/Open-cart/media/logo.png" alt="Open-Cart-logo">
+        </figure>
+
+        <div class="newsletter-container">
+          <h6>New to Open Cart?</h6>
+          <small>Suscribe to our newsletter to get updates on our latest offers</small>
+          <div>
+            <input type="text" placeholder="Enter your email address">
+            <button>Subscribe</button>
+          </div>
+          <label for="newsletter">
+            <p  class="d-flex align-center terms-conditions-contaner">
+              <input name="newsletter" id="newsletter" type="checkbox" value="yes">
+              <span>
+                I agree to open cart's Privacy and Cookie Policy.
+                You can unsubscribe at any time.
+                <small>I accept the Legal Terms</small>
+              </span>
+            </p>
+        </label>
+        </div>
+
+        <figure class="logo-container ">
+          <img src="/Open-cart/media/logo.png" alt="Open-Cart-logo">
+          <p>App in progress💯✔️</p>
+        </figure>
+      </div>
+
+      <!-- container for footer links -->
+      <div class="d-flex space-around align-start  second-footer-container">
+      <div>
+        <h6>need help?</h6>
+        <ul>
+          <li><a href="">chart with us</a></li>
+          <li><a href="">help center</a></li>
+          <li><a href="">contact us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6>about Open-Cart</h6>
+        <ul>
+          <li><a href="">about us</a></li>
+          <li><a href="">careers</a></li>
+          <li><a href="">Terms and Conditions</a></li>
+          <li><a href="">investors</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6>make money with opencart</h6>
+        <ul>
+          <li><a href="">sell on opencart</a></li>
+          <li><a href="">become a delivery agent</a></li>
+          <li><a href="">become a partner</a></li>
+          <li><a href="">become a vendor</a></li>
+          <li><a href="">Our Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6>open cart international</h6>
+        <div class="d-flex">
+          <ul>
+            <li><a href="">Nigeria</a></li>
+            <li><a href="">Ghana</a></li>
+            <li><a href="">Kenya</a></li>
+            <li><a href="">South Africa</a></li>
+            <li><a href="">Uganda</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Tanzania</a></li>
+            <li><a href="">Zambia</a></li>
+            <li><a href="">Zimbabwe</a></li>
+            <li><a href="">Rwanda</a></li>
+            <li><a href="">Cameroon</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <!-- lower footer container(social links) -->
+      <div>
+        <!-- socials -->
+        <div>
+          <h6>join us on</h6>
+          <ul class="socials-container d-flex ">
+            <li><a class="facebook-link-icon" href=""></a></li>
+            <li><a class="ig-link-icon" href=""></a></li>
+            <li><a class="x-link-icon" href=""></a></li>
+            <li><a class="linkedin-link-icon" href=""></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6>Payment methods</h6>
+          <ul>
+            <li><a href="">payment-icons</a></li>
+            <li><a href="">payment-icons</a></li>
+            <li><a href="">payment-icons</a></li>
+            <li><a href="">payment-icons</a></li>
+          </ul>
+        </div>
+
+        <hr>
+        <div class="d-flex space-btw align-center">
+          <p>© 2023 Open-Cart. All rights reserved.</p>
+          <p>21<sup>st</sup> centuary software</p>
+        </div>
+
+      </div>
+  </div>
+</footer>
+
+<script  src="scripts/scripts.js" type="module"></script>
+</body>
+</html>

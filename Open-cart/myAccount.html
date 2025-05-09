@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta tags for my section -->
+  <meta name="description" content="Access and manage your personal account on Open Cart. View your orders, update your profile, and customize your tech shopping experience.">
+  <meta name="keywords" content="Open Cart, tech eCommerce, personal account, tech orders, profile settings, user dashboard, electronics store">
+
+  <meta property="og:title" content="My Account - Open Cart" />
+  <meta property="og:description" content="Manage your tech orders and profile settings from your Open Cart account dashboard." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://i.imgur.com/coCsnKo.png" />
+  <!-- <meta property="og:url" content="https://yourdomain.com/account" />  -->
+
+  <!--general css rule : link to my section and general css-->
+  <link rel="stylesheet" href="/Open-cart/styles/general.css">
+  <link rel="stylesheet" href="/Open-cart/styles/myAccount.css">
+
+
+  <title> My Account | Open-cart</title>
+</head>
+<body>
+  <!-- header below is global id wait for the dev coding it to code it first then in put in my own code -->
+  <header></header>
+
+  <!--div holding my main and aside   -->
+  <div class="container">
+    <!-- aside container holding links to data pages of user interactions -->
+    <aside class="d-flex f-d-column">
+      <ul>
+      <li class="bd-radius">
+        <a tabindex="0" class="bd-radius"> 
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+          <span>My Open Cart Account</span>
+        </a>
+      </li>
+      <li>
+        <a tabindex="0"> 
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M620-163 450-333l56-56 114 114 226-226 56 56-282 282Zm220-397h-80v-200h-80v120H280v-120h-80v560h240v80H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v200ZM480-760q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/></svg>
+          <span>Orders</span>
+        </a>
+      </li>
+      <li>
+        <a tabindex="0"> 
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+          <span>Inbox</span>
+        </a>
+      </li>
+
+        <li>
+          <a tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m363-390 117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+             <span>Pending Reviews</span>
+            </a>
+          </li>
+
+        <li>
+          <a tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m368-320 112-84 110 84-42-136 112-88H524l-44-136-44 136H300l110 88-42 136ZM160-160q-33 0-56.5-23.5T80-240v-135q0-11 7-19t18-10q24-8 39.5-29t15.5-47q0-26-15.5-47T105-556q-11-2-18-10t-7-19v-135q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v135q0 11-7 19t-18 10q-24 8-39.5 29T800-480q0 26 15.5 47t39.5 29q11 2 18 10t7 19v135q0 33-23.5 56.5T800-160H160Zm0-80h640v-102q-37-22-58.5-58.5T720-480q0-43 21.5-79.5T800-618v-102H160v102q37 22 58.5 58.5T240-480q0 43-21.5 79.5T160-342v102Zm320-240Z"/></svg>
+             <span>Voucher</span></a
+             >
+        </li>
+  
+        <li>
+          <a tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+             <span>Wish List</span>
+          </a>
+        </li>
+
+        <li>
+          <a tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-720v-80h640v80H160Zm0 560v-240h-40v-80l40-200h640l40 200v80h-40v240h-80v-240H560v240H160Zm80-80h240v-160H240v160Zm-38-240h556-556Zm0 0h556l-24-120H226l-24 120Z"/></svg>
+             <span>Followed Sellers</span>
+          </a>
+        </li>
+
+        <li>
+          <a tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-80q-155 0-269-103T82-440h81q15 121 105.5 200.5T480-160q134 0 227-93t93-227q0-134-93-227t-227-93q-86 0-159.5 42.5T204-640h116v80H88q29-140 139-230t253-90q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm112-232L440-464v-216h80v184l128 128-56 56Z"/></svg>
+             <span>Recently viewed</span>
+          </a>
+        </li>
+      </ul>
+      <button class="myAccount-logout-btn">
+        log out
+      </button>
+    </aside>
+
+
+    <main>
+      <h3 class="BB">Account Overview</h3>
+
+      <div class="account-overview-container">
+
+          <div class="account-single-detail-container">
+            <h6 class="BB">ACCOUNT DETAILS</h6>
+            <p>Pascal Joseph</p>
+            <small>pascaljoseph729@gmail.com</small>
+          </div>
+
+          <div class="account-single-detail-container">
+            
+              <h6 class="BB d-flex space-btw ">
+                <span>
+                  ADDRESS BOOK
+                </span>
+                <span tabindex="0"><svg class="edith-address-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg></span>
+              </h6>
+            
+            <p>Your default shipping address</p>
+            <div class="d-flex f-d-column">
+              <small class="d-block">Pascal Joseph</small>
+              <small class="d-block">agbor park</small>
+              <small class="d-block">Benin, Edo</small>
+              <small class="d-block">+234 7046253045</small>
+            </div>
+          </div>
+
+          <div class="account-single-detail-container">
+            <h6 class="BB">Open-cart store credit</h6>
+            <p>Open cart store credit balance : $0</p>
+           
+          </div>
+
+          <div class="account-single-detail-container">
+            <h6 class="BB">Newsletter preferences</h6>
+            <p>Manage your email communications to stay updated with the latest news and offers.</p>
+            <a href="#">Edith Newsletter Preferences</a>
+          </div>
+
+
+      </div>
+
+      <!-- form to change address data -->
+       <form action="">
+        <!-- a container div set to display grid to show four inputs -->
+         <div class="first-four-inputs-container">
+          <div>
+            <label for="first-name-input">First name</label>
+            <input id="first-name-input" name="first name" placeholder="First Name" type="text">
+          </div>
+          
+          <div>
+            <label for="last-name-input">Last name</label>
+            <input id="last-name-input" name="Last Name" placeholder="Last Name" type="text">
+          </div>
+
+          <div>
+            <label for="ph-no-input">Phone number</label>
+            <input id="ph-no-input" name="phone number" placeholder="Enter your phone Number"  type="text">
+          </div>
+
+          <div>
+            <label for="add-phn-no-input"> Additional phone number</label>
+            <input id="add-phn-no-input" name="Additional phone number" placeholder="Enter your additional phone number"  type="text">
+          </div>
+         
+         </div>
+
+         <!-- div containing 2 inputs  for deivery address and other info  -->
+          <div class="middle-two-inputs-container">
+            <input type="text" placeholder="Delivery address : state, - local government, street.">
+            <input type="text" placeholder="Other info">
+          </div>
+           <!-- div for 2 selects displaying continents and country -->
+          <div class="d-flex space-btw select-geograpics-container">
+            <div>
+              <label for="">continents</label>
+              <select name="" id="">
+                <!-- just 7 continents no need to use api -->
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Artica">Artica</option>
+                <option value="Austrialia">Austrialia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+              </select>
+            </div>
+
+            <div>
+             <label for="">country</label>
+             <select name="" id="">
+              <!-- remind me to use api and get list of countries -->
+              <option value="Nigeria">Nigeria</option>
+             </select>
+            </div>
+          </div>
+            <!-- final div for my button to submit inputed data -->
+            <div class="d-flex j-c-end">
+              <button>
+                Reviewed and Confirm
+              </button>
+             </div>
+       </form>
+    </main>
+
+    <!-- ssection contains recommended products -->
+      <section>
+
+      </section>
+
+      
+  </div>
+
+  <!-- footer! -->
+  <footer>
+   <p>&copy; 21<sup>st</sup> Software</p> 
+  </footer>
+</body>
+</html>

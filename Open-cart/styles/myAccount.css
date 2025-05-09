@@ -1,0 +1,162 @@
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+
+
+ul{
+  list-style: none;
+  border-radius: inherit;
+}
+
+input{
+  padding: .8em 1em;
+  font-size: 1rem;
+  text-transform: capitalize;
+  width: 100%;
+  border-radius: .2rem;
+  border: 1.5px solid var(--light-grey);
+  transition: all 250ms ease ;
+}
+input:focus{
+  outline: none;
+  border: 1.5px solid var(--dark-blue);
+}
+
+aside{
+  width: 25%;
+  border-top-right-radius: .3rem;
+  border-top-left-radius: .3rem;
+  box-shadow: 3px -3px 5px var(--light-grey);
+  border: .01px solid var(--light-grey);
+  justify-content: space-between;
+}
+main{
+  width: 75%;
+  padding: .8em .5em;
+  border-top-right-radius: .3rem;
+  border-top-left-radius: .3rem;
+  border: .01px solid var(--light-grey);
+}
+
+.container{
+  padding: 5em 0;
+  max-width: 1200px;
+  display: flex;
+  gap: 1em;
+  margin-inline: auto;
+  height: auto;
+}
+
+span{
+  transition: all 300ms ease;
+  font-weight:600;
+}
+
+a{
+  display: flex;
+  padding: .7em .9em;
+  cursor: pointer;
+}
+a:hover span{
+  transform: translateX(.3rem);
+}
+a:hover svg{
+  transform: scale(1.15);
+}
+a:focus{
+  background-color: var(--steel-blue);
+  color: var(--white);
+  /* color: var(--l); */
+}
+form {
+  padding: 1em;
+}
+form >*{
+  padding: .8em 1.5em;
+}
+
+
+svg{
+  margin-right: .5em;
+  transition: all 250ms ease ;
+}
+
+/* ==== UTILITY CLASSES */
+.bd-radius{
+  border-radius: inherit;
+}
+.BB{border-bottom: 1px solid var(--light-grey);} /* BB ==== border bottom */
+
+
+.d-block{display: block;}
+.d-flex{display: flex;}
+.space-btw{justify-content: space-between;}
+.f-d-column{flex-direction: column; }
+.j-c-end{justify-content: end;}
+
+.myAccount-logout-btn{
+  width: 100%;
+  border-radius: 0;
+}
+
+
+.account-overview-container{
+   display: grid;
+   grid-template-columns: repeat(2, minmax(180px, 1fr));
+   gap: 1em;
+}
+
+.account-overview-container >*{
+  border: 1px solid var(--light-grey);
+  padding: .5em .9em;
+  border-radius: .3rem;
+}
+
+.edith-address-icon{
+  fill: var(--teal-green);
+}
+
+/* === CSSS FOR FORM AND FORM INPUTS ==== */
+.first-four-inputs-container{
+  display: grid;
+   grid-template-columns: repeat(2, minmax(180px, 1fr)); 
+   gap: 2em; 
+}
+
+
+.middle-two-inputs-container input{
+  margin: .8em 0;
+}
+
+select {
+  border: 1px solid var(--light-grey);
+  width: 100%;
+  transition: all 0.3s ease;
+
+  appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: url('data:image/svg+xml;utf8,<svg fill="%23000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-color: #fff;
+    background-size: 16px 16px;
+
+    padding: 10px 40px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+select:focus{
+  outline: none;
+  border: 1px solid var(--dark-blue);
+}
+
+.select-geograpics-container >*{
+  width: 100%;
+  padding-inline: 1em;
+}
