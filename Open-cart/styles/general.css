@@ -11,11 +11,13 @@
   --dark-blue: #000080; /* Headers, buttons, strong accents */
   --light-blue: #ADD8E6; /* Backgrounds, hover effects */
   --steel-blue: #4682B4; /* Subtle, techy feel */
+  --lighter-blue: #badae385;
   
   --black: #000000; /* Strong contrast, headings, footer */
   --dark-grey: #333333; /* Readability for text */
   --light-grey: #a6a4a4; /* Dividers, borders, subtle backgrounds */
   --white: #FFFFFF; /* Clean background and contrast */
+   --soft-white: #ffffffbe; 
   
   --crimson-red: #DC143C; /* Sale banners, urgent notifications */
   --tomato-red: #FF6347; /* Lighter alternative for warnings */
@@ -119,6 +121,7 @@ a:hover {
 .bg-dark-blue { background-color: var(--dark-blue); }
 .bg-light-blue { background-color: var(--light-blue); }
 .bg-steel-blue { background-color: var(--steel-blue); }
+.bg-lighter-blue { background-color: var(--lighter-blue); }
 
 .bg-black { background-color: var(--black); }
 .bg-dark-grey { background-color: var(--dark-grey); }
@@ -139,6 +142,7 @@ a:hover {
 .text-dark-blue { color: var(--dark-blue); }
 .text-light-blue { color: var(--light-blue); }
 .text-steel-blue { color: var(--steel-blue); }
+.text-lighter-blue { color: var(--lighter-blue); }
 
 .text-black { color: var(--black); }
 .text-dark-grey { color: var(--dark-grey); }
@@ -163,7 +167,6 @@ across web pages
 .container{
   max-width: 1200px;
   margin-inline: auto;
-  border: 2px solid red;
 }
 
 /* keeps displaying through out site hade to put it here */

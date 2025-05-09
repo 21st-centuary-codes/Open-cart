@@ -41,17 +41,48 @@
        </div>
 
        <ul class="d-flex">
-        <li tabindex="0">
-          <a class="text-icon-container">
+        <li class="dropdown" tabindex="0">
+          <a class="text-icon-container" class="text-icon-container">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
 
           <span class="text-primary-blue FWB">my account</span>
           <!-- dropdown icon -->
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
         </a>
+        <div class="dropdown-menu">
+          <ul>
+            <li>
+              <a class="text-icon-container" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+              <span>my account</span>
+            </a>.
+          </li>
+
+            <li>
+              <a class="text-icon-container" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M620-163 450-333l56-56 114 114 226-226 56 56-282 282Zm220-397h-80v-200h-80v120H280v-120h-80v560h240v80H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v200ZM480-760q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/></svg>
+                <span>orders</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="text-icon-container" href="#">
+                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                <span>inbox</span>
+              </a>
+            </li>
+            <li>
+              <a class="text-icon-container"  href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                <span>wishlist</span>
+              </a>
+            </li>
+          </ul>
+          <button>log out</button>
+        </div>
         </li>
 
-        <li tabindex="0">
+        <li tabindex="0" class="dropdown">
           <a class="text-icon-container">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"/></svg>
 
@@ -59,6 +90,17 @@
                <!-- dropdown icon -->
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
           </a>
+           <div class="dropdown-menu">
+          <ul>
+            <li><a href="#"><span>help center</span></a></li>
+            <li><a href="#"><span>place an order</span></a></li>
+            <li><a href="#"><span>payment options</span></a></li>
+            <li><a href="#"><span>track an order</span></a></li>
+            <li><a href="#"><span>cancel an order</span></a></li>
+            <li><a href="#"><span>returns and refund</span></a></li>
+          </ul>
+          <button>live chart</button>
+        </div>
         </li>
 
         <li>
@@ -72,7 +114,7 @@
 
   </header>
 
-  <main>
+  <main class="bg-lighter-blue">
      <div class="product-container">
 
         <div class="product-card">
@@ -103,7 +145,7 @@
 <footer>
   <div class="container">
       <!-- upper footer container -->
-      <div class="d-flex space-around align-start upper-footer-container">
+      <div class="d-flex space-around align-start upper-footer-container ">
         <figure class="logo-container">
           <img src="/Open-cart/media/logo.png" alt="Open-Cart-logo">
         </figure>
@@ -187,32 +229,34 @@
       </div>
 
       <!-- lower footer container(social links) -->
-      <div>
+      <div >
         <!-- socials -->
-        <div>
-          <h6>join us on</h6>
-          <ul class="socials-container d-flex ">
-            <li><a class="facebook-link-icon" href=""></a></li>
-            <li><a class="ig-link-icon" href=""></a></li>
-            <li><a class="x-link-icon" href=""></a></li>
-            <li><a class="linkedin-link-icon" href=""></a></li>
-          </ul>
-        </div>
+         <div class="d-flex space-around align-start icon-links-container">
+            <div >
+              <h6>join us on</h6>
+              <ul class="socials-container d-flex ">
+                <li><a class="facebook-link-icon" href=""></a></li>
+                <li><a class="ig-link-icon" href=""></a></li>
+                <li><a class="x-link-icon" href=""></a></li>
+              </ul>
+            </div>
 
-        <div>
-          <h6>Payment methods</h6>
-          <ul>
-            <li><a href="">payment-icons</a></li>
-            <li><a href="">payment-icons</a></li>
-            <li><a href="">payment-icons</a></li>
-            <li><a href="">payment-icons</a></li>
-          </ul>
+            <div>
+              <h6>Payment methods</h6>
+              <ul class="payment-methods-icon-container d-flex ">
+                <li><a class="cash-on-delivery-icon" href=""></a></li>
+                <li><a class="master-card-icon" href=""></a></li>
+                <li><a class="visa-icon" href=""></a></li>
+                <li><a class="wallet-icon" href=""></a></li>
+              </ul>
+            </div>
         </div>
 
         <hr>
-        <div class="d-flex space-btw align-center">
+        <!-- copy rights -->
+        <div class="d-flex j-c-center align-center f-d-column">
           <p>© 2023 Open-Cart. All rights reserved.</p>
-          <p>21<sup>st</sup> centuary software</p>
+          <p class="">21<sup>st</sup> centuary software</p>
         </div>
 
       </div>

@@ -26,3 +26,4 @@ may 1st 2025, to simply always place footer at the bottom for large screen sizes
               this will always push any content down taking up entire space provided you set it's 
               parent to d-flex.
               thanks to https://feathericons.com/?query=tw for social png icons!!!
+              thanks to https://www.flaticon.com/ for payment icons
