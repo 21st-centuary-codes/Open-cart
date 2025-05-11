@@ -4,6 +4,10 @@ body{
   flex-direction: column;
 }
 
+h1 {
+  font-size: clamp(1.3rem, 5vw, 2rem); /* Between 32px and 48px */
+}
+
 nav{
   padding: 1em 2em;
   box-shadow: 5px 5px 10px var(--light-grey);
@@ -35,6 +39,7 @@ img{
   width: 100%;
   height: 100%;
   display: block;
+   transition: all 250ms ease;
 }
 
 a{
@@ -77,6 +82,7 @@ input:focus{
 
 /* FONTN-UTILITIES */
 .FWB{font-weight: bold;}
+.text-center{text-align: center;}
 
 /* ======= OTHER UTILITIES ========= */
 /* for tags that have icons in then to center properly */
@@ -150,13 +156,36 @@ input:focus{
   transform: translateY(0);/* shows it in one horizontal row */
 }
 
+.product-category-section{
+  margin: 2em auto;
+  padding: 1em;
+  
+}
+
+.product-category-container {
+    display: grid;
+   
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+  padding: 2em;
+}
+
+.product-category-container figure{
+  height: 60px;
+}
+
+.product-category-container p{
+ text-align: center;
+}
+
+
 .product-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1em;
   padding: 2em;
   max-width: 1200px;
-  align-items: stretch;align-items: stretch;
+  align-items: stretch;
   margin-inline: auto;
 }
 
@@ -167,6 +196,16 @@ input:focus{
   padding: .5em .7em;
   border-radius: .5rem;
   transition: all 250ms ease;
+  overflow: hidden;
+}
+
+.product-img-contaner {
+   overflow: hidden;
+}
+
+.product-img-contaner:hover img{
+  transform: scale(1.1);
+ 
 }
 
 .product-container > *:hover{
@@ -181,14 +220,21 @@ input:focus{
    height: 210px;
 }
 
+.product-name{
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
 .product-price{
-  margin-left: .3em;
+  font-weight: 700;
+  margin-left: .5em;
+  color: var(--teal-green);
 }
 
 .sellers-img-container{
-  width: 30px;
-  background-color: var(--dark-blue);
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   font-size: .4rem;
   color: white;
